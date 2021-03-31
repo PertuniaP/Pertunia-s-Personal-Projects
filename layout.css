@@ -1,0 +1,133 @@
+body {
+    font-family: tahoma;
+    text-align: center;
+    background: grey;
+}
+
+header {
+    letter-spacing: 6px;
+    color: maroon;
+    background: royalblue;
+    padding: 20px;
+}
+
+section {
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2em;
+    width: 100%;
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ccc;
+    background-color: ivory;
+    margin: 25px;
+    padding: 25px;
+    box-shadow: 6px 6px 6px rgba (0, 0, 0, 0, 3);
+}
+
+@media (screenminwidth: 50em) {
+    .card {
+        flex-basis: 325px;
+        box-shadow: 6px 6px 6px yellow;
+    }
+    header h1 {
+        font-size: 5em
+    }
+}
+
+.icons {
+    font-size: 8em;
+    padding: 25px;
+    background-color: white;
+}
+
+.button,
+.container {
+    margin: 10px;
+}
+
+#btn {
+    background: royalblue;
+    width: 10%;
+}
+
+button,
+.button {
+    background: royalblue;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.blue {
+    background: teal;
+}
+
+td {
+    padding: 10px
+}
+
+table {
+    margin: auto;
+}
+
+.container {
+    background: royalblue;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    position: align-center;
+    margin-bottom: 10px;
+}
+
+#my-order {
+    background-color: #29C1C4;
+    padding: 25px;
+}
+
+div {
+    font-size: large;
+}
+
+nav {
+    flex: 2;
+    text-align: right;
+}
+
+.list {
+    background-color: grey;
+    color: white;
+    display: inline-block;
+    margin-right: 30px;
+    border: 10px solid teal;
+    padding: 5px;
+    width: 70px;
+    background-color: ivory;
+}
+
+.img1 {
+    width: 300px;
+    border: 5px solid maroon;
+}
+
+#myorder {
+    background-color: #29C1C4;
+    padding: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid black;
+    border-radius: 10px;
+}

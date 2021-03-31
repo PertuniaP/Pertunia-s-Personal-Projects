@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <ul>
+                <li class="list"><a href="HomePage.html"> Home</a></li>
+                <li class="list"><a href="ServicesPage.html"> Services</a></li>
+                <li class="list"><a href="ContactPage.html"> Contact</a></li>
+                <li class="list"><a href="OrderPage.html"> Order</a></li>
+        </nav>
+    </div>
+
+    <section>
+        <h2> MY ORDER FORM: </h2>
+    </section>
+    <form id="my form">
+        <table>
+            <tr>
+                <td> Name: </td>
+                <td><input type="text" size="25" name="my_name"></td>
+            </tr>
+            <tr>
+                <td> Address: </td>
+                <td><input type="text" size="25" name="my_address"></td>
+            </tr>
+            <tr>
+                <td> Book to borrow: </td>
+                <td><select name="book">
+<option> ----------- select book ---------- </option>
+<option> To Kill a Mockingbird </option>
+<option> The book Thief </option>
+<option> On Earth We're Briefly Gorgeous</option>
+<option> Born A crime</option>
+<option> Five Feet Apart </option>
+<option> Think Like A Monk </option>
+<option> The Winner stands alone </option>
+<option> The Fault in our stars </option>
+<option> The Girl in the grey Hoodie </option>
+<option> Divergent </option>
+</td>
+</select>
+            </tr>
+            <tr>
+                <td> Book Return Date: </td>
+                <td><input type="text" size="25" name="my_return date"></td>
+            </tr>
+
+            <tr>
+                <td> Number of Books</td>
+                <td><input type="number" name="book numbers" value="1" min="0" max="10"></td>
+                <td colspan="2">
+                    <input class="button" type="button" value="ProcessOrder" onclick="placeOrder();">
+                    <br/>
+                    <input class="button" type="reset" value="Clear">
+                </td>
+        </table>
+    </form>
+    <br/><br/><br/><br/><br/><br/>
+    <div id="myorder">
+
+    </div>
+
+    <!--<script>
+            function placeOrder() {
+                result = "<h3>Success!</h3> Here is your order.";
+                var orderResults = document.getElementById("my-order");
+                orderResults, innerHTML = results;
+            }
+        </script>-->
+
+    <script>
+        function placeOrder() {
+
+            var orderForm = document.getElementById("my form");
+            results = "<h3>Success!</h3> Here is your order .";
+            results += "<br>Name: " + orderForm.elements["my name "].value;
+            var orderResults = document.getElementById("myorder");
+            orderResults.innerHTML = results;
+
+        }
+    </script>
+    <br/><br/><br/><br/>
+    <footer><strong>Book Industries Inc &copy; 2021</footer></strong>
+</body>
+
+</html>
